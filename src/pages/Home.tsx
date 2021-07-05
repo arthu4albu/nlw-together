@@ -7,7 +7,7 @@ import { database } from "../services/firebase";
 
 import { useAuth } from "../hooks/useAuth";
 
-import { Button } from "../components/Button";
+import { Button } from "../components/Button/index";
 
 import illustrationImg from "../assets/images/illustration.svg";
 import logoImg from "../assets/images/logo.svg";
@@ -41,6 +41,11 @@ export function Home() {
 
         if (!roomRef.exists()) {
             alert("Room does not exists.");
+            return;
+        }
+
+        if (roomRef.val().endedAt) {
+            alert("Room already closed.")
             return;
         }
 

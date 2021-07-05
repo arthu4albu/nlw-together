@@ -4,7 +4,7 @@ import { FormEvent, useState } from "react"; // importação da tipagem do event
 
 import { useAuth } from "../hooks/useAuth";
 
-import { Button } from "../components/Button";
+import { Button } from "../components/Button/index";
 
 import "../styles/auth.scss";
 
