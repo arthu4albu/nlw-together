@@ -49,7 +49,7 @@ export function Home() {
             return;
         }
 
-        history.push(`/rooms/${roomCode}`);
+        history.push(`/admin/rooms/${roomCode}`);
     }
 
     return (

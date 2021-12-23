@@ -20,13 +20,13 @@
 
         strong {
             font: 700 36px 'Poppins', sans-serif;
-            line-height: 42px;
+            line-height: 4.2rem;
             margin-top: 16px;
         }
 
         p {
-            font-size: 24px;
-            line-height: 32px;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
             margin-top: 16px;
             color:  #f8f8f8;
         }
@@ -58,7 +58,7 @@
         }
 
         h2 {
-            font-size: 24px;
+            font-size: 2.4rem;
             margin: 64px 0 24px;
             font-family: 'Poppins', sans-serif;
         }
@@ -70,6 +70,7 @@
                 padding: 0 16px;
                 background: #FFF;
                 border: 1px solid #a8a8b3;
+                outline: none;
             }
             
             button {
@@ -83,7 +84,7 @@
     }
 
     p {
-        font-size: 14px;
+        font-size: 1.4rem;
         color: #737380;
         margin-top: 16px;
 
@@ -119,7 +120,7 @@
     }
 
     .separator {
-        font-size: 16px;
+        font-size: 1.6rem;
         color: #a8a8b3;
 
         margin: 32px 0;
@@ -140,6 +141,54 @@
             height: 1px;
             background: #a8a8b3;
             margin-left: 16px;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    #page-auth {
+        flex-direction: column;
+
+        aside {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        main {
+            .main-content {
+                margin: 4rem 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    aside img {
+        width: 14em;
+    }
+}
+
+@media (max-width: 320px) {
+    #page-auth {
+        aside {
+            padding: 4rem 80px;
+            strong, p {
+                font-size: 2.5rem;
+                line-height: 3rem;
+            }
+        }
+
+        main {
+            .main-content {
+                .create-room {
+                    width: 100%;
+                    justify-content: space-around;
+
+                    img {
+                        margin-right: 0;
+                    }
+                }
+            }
         }
     }
 }
